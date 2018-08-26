@@ -28,6 +28,32 @@
 				</configuration>
 			</plugin>
 			<plugin>
+        <groupId>org.mule.tools.maven</groupId>
+        <artifactId>mule-maven-plugin</artifactId>
+        <configuration>
+          <deploymentType>cloudhub</deploymentType>
+          <muleVersion>3.9.0</muleVersion> 
+          <username>bnprusty_55</username> 
+          <password>Bnptcs@55</password> 
+          <applicationName>test-mule-maven</applicationName>
+          <environment>sandbox</environment> 
+          <businessGroup>TCS</businessGroup>
+          <region>us-east-1</region>
+          <uri>anypoint.mulesoft.com</uri> 
+          <workerType>Micro</workerType>
+          <workers>1</workers>
+        </configuration>
+        <executions>
+          <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<version>1.7</version>
