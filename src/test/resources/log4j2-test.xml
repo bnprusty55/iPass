@@ -14,7 +14,7 @@
         <!-- Apache Commons tend to make a lot of noise which can clutter the log-->
         <AsyncLogger name="org.apache" level="WARN"/>
 
-        <!-- Reduce startup nois -->
+        <!-- Reduce startup noise -->
         <AsyncLogger name="org.springframework.beans.factory" level="WARN"/>
 
         <!-- Mule classes -->
